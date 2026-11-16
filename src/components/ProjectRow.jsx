@@ -34,7 +34,7 @@ export default function ProjectRow({ project, showRole = false }) {
           ))}
         </ul>
         <Link to={to} className="text-link mt-6 inline-block">
-          Read the case study
+          Click to learn more
         </Link>
       </div>
     </article>

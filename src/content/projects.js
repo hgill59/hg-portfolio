@@ -1,5 +1,3 @@
-// Projects, strongest first. Image files live in /public/images/projects.
-// A project can also have `clip: '/images/projects/name.mp4'` to show a short video.
 
 export const projects = [
   {
@@ -8,7 +6,7 @@ export const projects = [
     tagline:
       'A full redesign for a rental company with homes in Edmonton, Spruce Grove and Leduc.',
     role: 'Web developer and designer. I also handled SEO, content and client communication.',
-    tools: ['WordPress', 'Elementor', 'Custom Post Types', 'Bluehost', 'FTP/SFTP'],
+    tools: ['WordPress', 'Elementor', 'Custom Post Types', 'FTP/SFTP'],
     liveUrl: 'https://rentalsbynewera.ca',
     image: '/images/projects/rentals-main.webp',
     clip: '/images/projects/rentals-site.mp4',
@@ -18,7 +16,7 @@ export const projects = [
     process: [
       {
         title: 'Taking over the site',
-        text: 'The previous developer handed over WordPress admin, FTP/SFTP, the database, DNS and plugin licenses. Before changing anything, I learned how the site was set up: local and live environments, caching, user roles and Custom Post Types. The biggest thing was learning the main plugin Elementor, as it was the main area of build. It is a drag and drop website builder so going from looking at a bunch little words and letters on a screen for some years to this was a bit of a challenge'
+        text: 'The previous developer handed over WordPress admin, FTP/SFTP, the database, DNS and plugin licenses. Before changing anything, I learned how the site was set up: local and live environments, caching, user roles and Custom Post Types. The biggest thing was learning the main plugin Elementor, as it was the main area of build. It is a drag and drop website builder so going from looking at a bunch little words and letters on a screen for some time to this was a bit of a challenge'
       },
       {
         title: 'Listing cards',
@@ -30,17 +28,17 @@ export const projects = [
       },
       {
         title: 'Why New Era page',
-        text: 'The Why New Era page previously had the content on the page be displayed out of order with little to no care. For more contrast and readibility I added ',
+        text: 'The Why New Era page previously had the content on the page be displayed out of order with little to no care. For more contrast and readibility I added more of a heading structure with each section being a different background color. Changing up the positioning of each section would allow users to be open to explore more.',
         shot: {
-          src: '/images/projects/rentals-contact.webp',
+          src: '/images/projects/why-new-era-sect.webp',
           alt: 'Redesigned Why New Era page',
         },
       },
     ],
     result:
-      'A consistent, redesigned site across the homepage, Listings, Why New Era and Contact pages. The design system carried through all later work on the site.',
+      'A consistent, redesigned site across the homepage, Listings, Why New Era and Contact pages. The design system carried through all later work on the site. With constant client communication and rapid responses, the sites health has exponentially increased user retention rates. The last developers rushed the initial build so I had to make sure clients were happy with what I was providing.',
     learned:
-      'Taking over someone else’s site means understanding it before improving it. Setting up the design system first made every later page faster to build.',
+      'Taking over someone else’s site means understanding it before improving it on adding my own spin and expertise to it. This is critical because when clients ask for changes and new features, having that knowledge already will make it a easier task.'
   },
   {
     slug: 'homes-by-new-era',
@@ -50,34 +48,35 @@ export const projects = [
     role: 'Web developer. I also handle SEO and AEO strategy, content and client communication.',
     tools: ['WordPress', 'HTML and CSS', 'Structured data', 'FAQ schema', 'Bluehost'],
     liveUrl: 'https://homesbynewera.ca',
-    image: '/images/projects/homes-main.webp',
+    image: '/images/projects/homes-by-new-era.webp',
+    clip: '',
     imageAlt: 'Homepage of the Homes by New Era website',
     brief:
       'Homes by New Era is a homebuilder working in Edmonton, Spruce Grove and Leduc. I took over development from another developer and now handle the site’s pages, templates, content and search visibility.',
     process: [
       {
         title: 'Getting access',
-        text: 'The site had been crashing, and the database was the main suspect. At first I had no phpMyAdmin access, so the handover began with getting full access to the hosting, the database and the WordPress admin.',
+        text: 'The proccess of getting access to the site files and Wordpress Admin page was simple, until issues starting to stem from the hosting. The site had been crashing, and the database was the main suspect. At first I had no phpMyAdmin access, so I also had to takeover hosting as well. It is hosted on Bluehost, as well is Rentals By New Era.',
       },
       {
         title: 'Reusable templates',
         text: 'I am building unified page templates around the New Era brand: charcoal, gold and cream, Fraunces and Work Sans type, and blueprint-grid motifs. New pages start from a template instead of from scratch.',
         shot: {
-          src: '/images/projects/homes-templates.webp',
+          src: '/images/projects/homes-theme-build.webp',
           alt: 'A New Era page template with charcoal, gold and cream colours and a blueprint grid motif',
         },
       },
       {
         title: 'Pages the client asked for',
-        text: 'A client email led to a multi-select filter for the Quick Possessions page, animation fixes and a larger Interiors page. I also redesigned and improved Quick Possessions and the Buyer’s Blueprint blog series.',
+        text: 'This site before handed to me already had a styling that the client liked so my job was to make sure whatever knew was to be added fit with there criteria. For example, a client email led to a multi-select filter for the Quick Possessions page instead of the dropdown filters that were there previously. New features that were added by me as well were the GST rebate and mortgage calculators using Javascript. I used Bootstrap CSS as it resembled the most to the rest of the site.',
         shot: {
-          src: '/images/projects/homes-quick-possessions.webp',
+          src: '/images/projects/quick-possessions.webp',
           alt: 'The Quick Possessions page with its multi-select filter',
         },
       },
       {
         title: 'SEO and answer engines',
-        text: 'I audited structured data, heading hierarchy and internal linking. AEO (answer engine optimization) became a priority from the start: FAQ schema, featured-snippet targeting and location-forward writing.',
+        text: 'I audited structured data, heading hierarchy and internal linking. AEO (answer engine optimization) became a priority from the startby adding FAQ schemas and location-forward writing in pages and posts. ',
       },
       {
         title: 'A blog schedule',
