@@ -34,6 +34,15 @@ export default function About() {
                     </p>
                 
                     <p>Away from the screen, you’ll usually find me in the gym as it's my primary escape when the screens get to overwhelming. Lifing weigthts and just getting a sweat in is something I will never take for granted. Without it, I don't think my strive to be better and work my hardest wouldn't be as strong. The resilience and accountablity that comes with weightlifting helps me in everyday life especially with my work. Motivation is everything when there is so much saturation.</p>
+                    <a
+              href='https://github.com/hgill59'
+              target="_blank"
+              rel="noreferrer"
+              className="text-link text-ink"
+            >
+              https://github.com/hgill59
+              <span className="sr-only"> (opens in a new tab)</span>
+            </a>
                   </div>
           
 

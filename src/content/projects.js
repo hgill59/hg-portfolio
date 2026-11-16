@@ -29,6 +29,7 @@ export const projects = [
       {
         title: 'Content in Cockpit',
         text: 'Content lives in Cockpit, a small PHP-based headless CMS, so staff can update the site without touching code. Cockpit is a headless cms written in php. API First, so we can have any frontend framework that supports fetch over http. And comes with a lot of built-ins and out of the box features like field types already defined, an asset management system, and all self hosted and with a nice free tier. Well the biggest was the lack of support online. There is a small community of developers maintaining this project.',
+        image: '/images/projects/ahas-main.webp',
         shot: {
           src: '/images/projects/ahas-cms.webp',
           alt: 'The Cockpit CMS editing screen for the AHAS website',

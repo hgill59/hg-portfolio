@@ -22,7 +22,7 @@ export default function Home() {
               Aspiring {site.role}
             </p>
             <p className="mt-4 max-w-[34rem] text-slate">
-              I build, fix and grow websites.
+              I build, fix and grow websites with a passion of coding and to graduate from the Northern Alberta Institute of Technology with a diploma in Digital Media and IT, focusing on Web Design and Development.
             </p>
             <div className="mt-9 flex flex-wrap gap-4">
               <Link to="/projects" className="btn btn-primary">
