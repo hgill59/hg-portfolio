@@ -1,6 +1,49 @@
 
 export const projects = [
   {
+    slug: 'ahas-website',
+    title: 'Alberta Helping Animals Society',
+    tagline: 'A website redesign for an Edmonton non-profit, built as a three-person team.',
+    role: 'Developer and Designer on a three-person team.',
+    team: 'Curtis, Pavan and me, working as HPC Developments',
+    tools: ['Figma', 'Astro', 'Cockpit CMS', 'React', 'Tailwind CSS'],
+    liveUrl: 'https://ahas.ca',
+    image: '/images/projects/ahas-main.webp',
+    clip: '/images/projects/ahas-video.mp4',
+    imageAlt: 'Homepage of the Alberta Helping Animals Society website',
+    brief:
+      'Alberta Helping Animals Society (AHAS) is a non-profit in Edmonton. Three of us rebuilt its website as a team project, working under the name HPC Developments.',
+    process: [
+      {
+        title: 'Design in Figma',
+        text: 'We started with design and wireframes in Figma so the team agreed on the structure before writing code. Me and my team conducted a proper Design Sprint which took us a week to complete. Doing this made later stages in development much more streamlined. If there was any changes to be made, we at least have a starting point to build off of.',
+        shot: {
+          src: '/images/projects/ahas-figma.webp',
+          alt: 'Figma wireframes for the AHAS website',
+        },
+      },
+      {
+        title: 'Initial Development',
+        text: 'No Node.js was available for us to use, and we wanted to use a framework written in JS or Typescript which astro supports. But there was no server side rendering options in js if node wasn’t available. The CMS we we needed had to be able to be self hosted, in shared hosting using PHP. After some research, we looked at a ton of headless headless CMS platforms, Sanity, Strapi, Payload, Keystone, and wordpress headless. All the good ones (headless) except wordpress required server side execution with node. It was getting quite frustrating but eventually we found a small CMS called Cockpit - only ~600 stars on github, and installed it to try it out.'
+      },
+      {
+        title: 'Content in Cockpit',
+        text: 'Content lives in Cockpit, a small PHP-based headless CMS, so staff can update the site without touching code. Cockpit is a headless cms written in php. API First, so we can have any frontend framework that supports fetch over http. And comes with a lot of built-ins and out of the box features like field types already defined, an asset management system, and all self hosted and with a nice free tier. Well the biggest was the lack of support online. There is a small community of developers maintaining this project.',
+        shot: {
+          src: '/images/projects/ahas-cms.webp',
+          alt: 'The Cockpit CMS editing screen for the AHAS website',
+        },
+      },
+      {
+        title: 'Front end in Astro',
+        text: 'The front end is built with Astro, a static site framework, which keeps the pages fast. Astro prefetches all the content that retrieved from fetch calls at build time, it’s the main idea of the framework.  Content we needed to be dynamic and update in real time needed to be put in a component that ships to the client. It also allowed integration with react components as well. All dynamic content is put in a react component and sent to the browser to load the data. It just added a layer of complexity, but also a clear separation between what needed to be dynamic and what needed to be static.',
+      },
+    ],
+    result: 'The new site is live at ahas.ca. We were able to be one of the first sites to be live in our Capstone class. Our client was very happy with the outcome and found the Cockpit CMS easy to use.',
+    learned:
+      'This project was a major building block in expanding my mind to trying different things and how to properly build a site. My problem solving and planning skills were heavily challenged in the best way possible and grew those skills. The biggest thing I would say I learned is how to communicate with a client efficiently and professionally to meet there needs as soon as you can, without sacrificing quality.',
+  },
+  {
     slug: 'rentals-by-new-era',
     title: 'Rentals by New Era',
     tagline:
@@ -92,49 +135,7 @@ export const projects = [
     learned:
       'Design, content and SEO are one job on a site like this. Heading structure, internal links and templates affect each other, so I plan them together.',
   },
-  {
-    slug: 'ahas-website',
-    title: 'Alberta Helping Animals Society',
-    tagline: 'A website redesign for an Edmonton non-profit, built as a three-person team.',
-    role: 'Developer and Designer on a three-person team.',
-    team: 'Curtis, Pavan and me, working as HPC Developments',
-    tools: ['Figma', 'Astro', 'Cockpit CMS', 'React', 'Tailwind CSS'],
-    liveUrl: 'https://ahas.ca',
-    image: '/images/projects/ahas-main.webp',
-    clip: '/images/projects/ahas-video.mp4',
-    imageAlt: 'Homepage of the Alberta Helping Animals Society website',
-    brief:
-      'Alberta Helping Animals Society (AHAS) is a non-profit in Edmonton. Three of us rebuilt its website as a team project, working under the name HPC Developments.',
-    process: [
-      {
-        title: 'Design in Figma',
-        text: 'We started with design and wireframes in Figma so the team agreed on the structure before writing code. Me and my team conducted a proper Design Sprint which took us a week to complete. Doing this made later stages in development much more streamlined. If there was any changes to be made, we at least have a starting point to build off of.',
-        shot: {
-          src: '/images/projects/ahas-figma.webp',
-          alt: 'Figma wireframes for the AHAS website',
-        },
-      },
-      {
-        title: 'Initial Development',
-        text: 'No Node.js was available for us to use, and we wanted to use a framework written in JS or Typescript which astro supports. But there was no server side rendering options in js if node wasn’t available. The CMS we we needed had to be able to be self hosted, in shared hosting using PHP. After some research, we looked at a ton of headless headless CMS platforms, Sanity, Strapi, Payload, Keystone, and wordpress headless. All the good ones (headless) except wordpress required server side execution with node. It was getting quite frustrating but eventually we found a small CMS called Cockpit - only ~600 stars on github, and installed it to try it out.'
-      },
-      {
-        title: 'Content in Cockpit',
-        text: 'Content lives in Cockpit, a small PHP-based headless CMS, so staff can update the site without touching code. Cockpit is a headless cms written in php. API First, so we can have any frontend framework that supports fetch over http. And comes with a lot of built-ins and out of the box features like field types already defined, an asset management system, and all self hosted and with a nice free tier. Well the biggest was the lack of support online. There is a small community of developers maintaining this project.',
-        shot: {
-          src: '/images/projects/ahas-cms.webp',
-          alt: 'The Cockpit CMS editing screen for the AHAS website',
-        },
-      },
-      {
-        title: 'Front end in Astro',
-        text: 'The front end is built with Astro, a static site framework, which keeps the pages fast. Astro prefetches all the content that retrieved from fetch calls at build time, it’s the main idea of the framework.  Content we needed to be dynamic and update in real time needed to be put in a component that ships to the client. It also allowed integration with react components as well. All dynamic content is put in a react component and sent to the browser to load the data. It just added a layer of complexity, but also a clear separation between what needed to be dynamic and what needed to be static.',
-      },
-    ],
-    result: 'The new site is live at ahas.ca. We were able to be one of the first sites to be live in our Capstone class. Our client was very happy with the outcome and found the Cockpit CMS easy to use.',
-    learned:
-      'This project was a major building block in expanding my mind to trying different things and how to properly build a site. My problem solving and planning skills were heavily challenged in the best way possible and grew those skills. The biggest thing I would say I learned is how to communicate with a client efficiently and professionally to meet there needs as soon as you can, without sacrificing quality.',
-  },
+  
 ]
 
 export const getProject = (slug) => projects.find((p) => p.slug === slug)
