@@ -19,7 +19,7 @@ export default function ProjectRow({ project, showRole = false }) {
         <p className="mt-3 max-w-[34rem]">{project.tagline}</p>
         {showRole && (
           <p className="mt-3 max-w-[34rem] text-slate">
-            <span className="font-display font-semibold text-ink">My role: </span>
+            <span className="font-display font-semibold text-ink">My Role: </span>
             {project.role}
           </p>
         )}

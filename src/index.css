@@ -6,8 +6,8 @@
 
   --color-ink: #14171c;
   --color-night: #1b2029;
-  --color-ember: #f0621c;
-  --color-ember-deep: #b8430a;
+  --color-ember: #684F95;
+  --color-ember-deep: #684F95;
   --color-fog: #eceff2;
   --color-mist: #d9dee4;
   --color-slate: #4f5966;
@@ -50,7 +50,7 @@
   }
 
   .btn-primary {
-    @apply bg-ember text-ink hover:bg-ink hover:text-fog;
+    @apply bg-ember text-white hover:bg-ink hover:text-fog;
   }
 
   .btn-outline {

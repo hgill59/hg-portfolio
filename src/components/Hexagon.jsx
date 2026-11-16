@@ -14,7 +14,7 @@ export function HexPortrait({ src, alt, className = '' }) {
         <polygon
           points="50,0 100,28.87 100,86.6 50,115.47 0,86.6 0,28.87"
           fill="none"
-          stroke="#f0621c"
+          stroke="#F4B63A"
           strokeWidth="3"
           strokeLinejoin="round"
           vectorEffect="non-scaling-stroke"
