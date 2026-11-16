@@ -10,12 +10,8 @@ export default function Home() {
   const featured = projects.slice(0, 3)
 
   return (
-    <>
-      <section className="relative isolate overflow-hidden">
-        <div
-          aria-hidden="true"
-          className="hex-bg absolute inset-0 -z-10 [mask-image:linear-gradient(to_bottom,black_30%,transparent)]"
-        />
+    <div className="bg-white">
+      <section>
         <div className="mx-auto grid max-w-6xl items-center gap-14 px-5 pb-20 pt-12 sm:px-8 lg:grid-cols-[1.25fr_0.75fr] lg:pt-20">
           <div>
             <h1 className="font-display text-[clamp(3.75rem,12vw,8.5rem)] font-bold leading-[0.9] tracking-tighter">
@@ -71,6 +67,6 @@ export default function Home() {
           </Link>
         </div>
       </section>
-    </>
+    </div>
   )
 }

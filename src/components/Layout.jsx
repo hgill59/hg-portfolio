@@ -1,4 +1,4 @@
-import { Link, NavLink, Outlet } from 'react-router-dom'
+import { Link, NavLink, Outlet, useLocation } from 'react-router-dom'
 import { site } from '../content/site'
 import Logo from './Logo'
 import ScrollToTop from './ScrollToTop'
@@ -9,6 +9,8 @@ const navLinkClass = ({ isActive }) =>
   }`
 
 export default function Layout() {
+  const isHome = useLocation().pathname === '/'
+
   return (
     <div className="flex min-h-screen flex-col">
       <ScrollToTop />
@@ -19,7 +21,11 @@ export default function Layout() {
         Skip to content
       </a>
 
-      <header className="sticky top-0 z-40 border-b border-mist bg-fog/90 backdrop-blur">
+      <header
+        className={`sticky top-0 z-40 border-b border-mist backdrop-blur ${
+          isHome ? 'bg-white/90' : 'bg-fog/90'
+        }`}
+      >
         <nav
           aria-label="Main"
           className="mx-auto flex max-w-6xl items-center justify-between px-5 py-3 sm:px-8"
