@@ -49,7 +49,7 @@ export const projects = [
     tools: ['WordPress', 'HTML and CSS', 'Structured data', 'FAQ schema', 'Bluehost'],
     liveUrl: 'https://homesbynewera.ca',
     image: '/images/projects/homes-by-new-era.webp',
-    clip: '',
+    clip: '/images/projects/homes-video.mp4',
     imageAlt: 'Homepage of the Homes by New Era website',
     brief:
       'Homes by New Era is a homebuilder working in Edmonton, Spruce Grove and Leduc. I took over development from another developer and now handle the site’s pages, templates, content and search visibility.',
@@ -76,7 +76,7 @@ export const projects = [
       },
       {
         title: 'SEO and answer engines',
-        text: 'I audited structured data, heading hierarchy and internal linking. AEO (answer engine optimization) became a priority from the startby adding FAQ schemas and location-forward writing in pages and posts. ',
+        text: 'I audited structured data, heading hierarchy and internal linking. AEO (answer engine optimization) became a priority from the startby adding FAQ schemas and location-forward writing in pages and posts.',
       },
       {
         title: 'A blog schedule',
@@ -96,34 +96,39 @@ export const projects = [
     slug: 'ahas-website',
     title: 'Alberta Helping Animals Society',
     tagline: 'A website redesign for an Edmonton non-profit, built as a three-person team.',
-    role: 'Developer on a three-person team.',
+    role: 'Developer and Designer on a three-person team.',
     team: 'Curtis, Pavan and me, working as HPC Developments',
-    tools: ['Figma', 'Astro', 'Cockpit CMS'],
+    tools: ['Figma', 'Astro', 'Cockpit CMS', 'React', 'Tailwind CSS'],
     liveUrl: 'https://ahas.ca',
     image: '/images/projects/ahas-main.webp',
+    clip: '/images/projects/ahas-video.mp4',
     imageAlt: 'Homepage of the Alberta Helping Animals Society website',
     brief:
       'Alberta Helping Animals Society (AHAS) is a non-profit in Edmonton. Three of us rebuilt its website as a team project, working under the name HPC Developments.',
     process: [
       {
         title: 'Design in Figma',
-        text: 'We started with design and wireframes in Figma so the team agreed on the structure before writing code.',
+        text: 'We started with design and wireframes in Figma so the team agreed on the structure before writing code. Me and my team conducted a proper Design Sprint which took us a week to complete. Doing this made later stages in development much more streamlined. If there was any changes to be made, we at least have a starting point to build off of.',
         shot: {
           src: '/images/projects/ahas-figma.webp',
           alt: 'Figma wireframes for the AHAS website',
         },
       },
       {
-        title: 'Front end in Astro',
-        text: 'The front end is built with Astro, a static site framework, which keeps the pages fast.',
+        title: 'Initial Development',
+        text: 'No Node.js was available for us to use, and we wanted to use a framework written in JS or Typescript which astro supports. But there was no server side rendering options in js if node wasn’t available. The CMS we we needed had to be able to be self hosted, in shared hosting using PHP. After some research, we looked at a ton of headless headless CMS platforms, Sanity, Strapi, Payload, Keystone, and wordpress headless. All the good ones (headless) except wordpress required server side execution with node. It was getting quite frustrating but eventually we found a small CMS called Cockpit - only ~600 stars on github, and installed it to try it out.'
       },
       {
         title: 'Content in Cockpit',
-        text: 'Content lives in Cockpit, a small PHP-based headless CMS, so staff can update the site without touching code.',
+        text: 'Content lives in Cockpit, a small PHP-based headless CMS, so staff can update the site without touching code. Cockpit is a headless cms written in php. API First, so we can have any frontend framework that supports fetch over http. And comes with a lot of built-ins and out of the box features like field types already defined, an asset management system, and all self hosted and with a nice free tier. Well the biggest was the lack of support online. There is a small community of developers maintaining this project.',
         shot: {
           src: '/images/projects/ahas-cms.webp',
           alt: 'The Cockpit CMS editing screen for the AHAS website',
         },
+      },
+      {
+        title: 'Front end in Astro',
+        text: 'The front end is built with Astro, a static site framework, which keeps the pages fast.',
       },
     ],
     result: 'The new site is live at ahas.ca.',
