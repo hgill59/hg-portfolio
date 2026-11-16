@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Familjen Grotesk Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Literata Variable", Georgia, "Times New Roman", serif;
+
+  --color-ink: #14171c;
+  --color-night: #1b2029;
+  --color-ember: #f0621c;
+  --color-ember-deep: #b8430a;
+  --color-fog: #eceff2;
+  --color-mist: #d9dee4;
+  --color-slate: #4f5966;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-fog font-body text-ink antialiased;
+    font-size: 1.0625rem;
+    line-height: 1.7;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    text-wrap: balance;
+  }
+
+  :focus-visible {
+    outline: 3px solid var(--color-ember-deep);
+    outline-offset: 3px;
+  }
+
+  .on-dark :focus-visible {
+    outline-color: var(--color-ember);
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center rounded-full px-6 py-3 font-display text-lg font-semibold transition-colors;
+  }
+
+  .btn-primary {
+    @apply bg-ember text-ink hover:bg-ink hover:text-fog;
+  }
+
+  .btn-outline {
+    @apply border-2 border-ink text-ink hover:bg-ink hover:text-fog;
+  }
+
+  .on-dark .btn-primary {
+    @apply hover:bg-fog hover:text-ink;
+  }
+
+  .on-dark .btn-outline {
+    @apply border-fog text-fog hover:bg-fog hover:text-ink;
+  }
+
+  .text-link {
+    @apply font-display font-medium underline decoration-ember decoration-2 underline-offset-4 hover:decoration-ink;
+  }
+
+  .on-dark .text-link {
+    @apply hover:decoration-fog;
+  }
+
+  /* Hexagon tessellation drawn with a tiny inline SVG tile */
+  .hex-bg {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='34.64' height='60' viewBox='0 0 34.64 60'%3E%3Cpath d='M17.32 0 34.64 10V30L17.32 40 0 30V10ZM17.32 40V60' fill='none' stroke='%23c2cad3' stroke-width='1'/%3E%3C/svg%3E");
+  }
+
+  .hex-tile {
+    @apply bg-mist;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='34.64' height='60' viewBox='0 0 34.64 60'%3E%3Cpath d='M17.32 0 34.64 10V30L17.32 40 0 30V10ZM17.32 40V60' fill='none' stroke='%23b6bfc9' stroke-width='1'/%3E%3C/svg%3E");
+  }
+
+  /* The one animated moment on the site: the hero hexagon draws itself */
+  .hex-draw {
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+    animation: hex-draw 1.4s 0.2s ease-out forwards;
+  }
+}
+
+@keyframes hex-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .hex-draw {
+    animation: none;
+    stroke-dashoffset: 0;
+  }
+
+  * {
+    transition-duration: 0.01ms !important;
+  }
+}
