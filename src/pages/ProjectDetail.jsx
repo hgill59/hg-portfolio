@@ -36,11 +36,11 @@ export default function ProjectDetail() {
       </header>
 
       <dl className="mt-10 grid gap-6 border-y border-ink/15 py-6 sm:grid-cols-2 lg:grid-cols-3">
-        <Meta label="My role">{project.role}</Meta>
+        <Meta label="My Role">{project.role}</Meta>
         {project.team && <Meta label="Team">{project.team}</Meta>}
         <Meta label="Tools">{project.tools.join(', ')}</Meta>
         {project.liveUrl && (
-          <Meta label="Live site">
+          <Meta label="Live Site">
             <a
               href={project.liveUrl}
               target="_blank"

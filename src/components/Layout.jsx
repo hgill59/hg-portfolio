@@ -22,8 +22,7 @@ export default function Layout() {
       </a>
 
       <header
-        className={`sticky top-0 z-40 border-b border-mist backdrop-blur ${
-          isHome ? 'bg-white/90' : 'bg-fog/90'
+        className={`sticky top-0 z-40  bg-white/90 border-b border-mist backdrop-blur'
         }`}
       >
         <nav

@@ -10,7 +10,7 @@ export default function Home() {
   const featured = projects.slice(0, 3)
 
   return (
-    <div className="bg-white">
+    <div>
       <section>
         <div className="mx-auto grid max-w-6xl items-center gap-14 px-5 pb-20 pt-12 sm:px-8 lg:grid-cols-[1.25fr_0.75fr] lg:pt-20">
           <div>

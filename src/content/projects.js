@@ -3,7 +3,7 @@ export const projects = [
   {
     slug: 'ahas-website',
     title: 'Alberta Helping Animals Society',
-    tagline: 'A website redesign for an Edmonton non-profit, built as a three-person team.',
+    tagline: 'A website redesign for an Edmonton non-profit, built as a three-person team for our NAIT Capstone Project.',
     role: 'Developer and Designer on a three-person team.',
     team: 'Curtis, Pavan and me, working as HPC Developments',
     tools: ['Figma', 'Astro', 'Cockpit CMS', 'React', 'Tailwind CSS'],
