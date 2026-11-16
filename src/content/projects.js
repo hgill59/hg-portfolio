@@ -30,7 +30,7 @@ export const projects = [
       },
       {
         title: 'Why New Era page',
-        text: 'The Why New Era page previously ',
+        text: 'The Why New Era page previously had the content on the page be displayed out of order with little to no care. For more contrast and readibility I added ',
         shot: {
           src: '/images/projects/rentals-contact.webp',
           alt: 'Redesigned Why New Era page',
