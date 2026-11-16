@@ -44,7 +44,7 @@ export default function Home() {
 
       <section className="mx-auto max-w-6xl px-5 pb-8 sm:px-8">
         <div className="flex flex-wrap items-baseline justify-between gap-4 pb-6">
-          <h2 className="text-4xl font-bold sm:text-5xl">Selected work</h2>
+          <h2 className="text-4xl font-bold sm:text-5xl">Projects & Work</h2>
           <Link to="/projects" className="text-link">
             All projects
           </Link>

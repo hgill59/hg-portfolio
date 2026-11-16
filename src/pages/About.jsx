@@ -27,24 +27,17 @@ export default function About() {
 
       <div className="max-w-[40rem]">
         <h1 className="text-4xl font-bold sm:text-5xl">
-          Hand me a website that keeps crashing, and I’ll start with the database.
+          Hi, I'm Harman
         </h1>
 
         <div className="mt-8 space-y-5">
           <p>
-            I’m {site.name}, a web developer and the founder of {site.business}, a web
-            development and digital marketing agency. I work with WordPress and Elementor, PHP
-            frameworks such as CodeIgniter, and static sites built with Astro. My clients so far
-            include a homebuilder, a rental company and a non-profit.
+            I’m a web developer who created {site.business} with the set goal of hopefully one day building it up to becoming a digital marketing agency!</p>
+            
+            <p>What I work with the most at the moment is Wordpress when it comes to my client work. My clients so far have been a pretty prominent home builder in the Edmonton area.
           </p>
           <p>
-            What I enjoy most is taking a site that’s hard to use or hard to find and making it
-            clear: better design, tidier code, and content that both people and search engines
-            can follow.
-          </p>
-          <p>
-            Getting my logo to display properly in my email signature took some SVG-to-PNG
-            conversion and base64 embedding, which is a very specific kind of fun.
+            Other than Wordpress, I have also worked with more modern frameworks like React/NextJs, Tailwind CSS, and Typescript. For my non-profit client, me and my team built the site using Astro a server-first JavaScript web framework designed for building fast, content-driven websites with mostly static content that allowed React and Tailwind components. What I enjoy most is taking a site that’s hard to use or hard to find and making it clear: better design, tidier code, and content that both people and search engines can follow. 
           </p>
           <p>Away from the screen, you’ll usually find me in the gym.</p>
         </div>

@@ -35,8 +35,7 @@ export default function ProjectDetail() {
         <p className="mt-4 text-xl text-slate">{project.tagline}</p>
       </header>
 
-      <dl className="mt-10 grid gap-6 border-y border-ink/15 py-6 sm:grid-cols-2 lg:grid-cols-4">
-        <Meta label="Type">{project.type}</Meta>
+      <dl className="mt-10 grid gap-6 border-y border-ink/15 py-6 sm:grid-cols-2 lg:grid-cols-3">
         <Meta label="My role">{project.role}</Meta>
         {project.team && <Meta label="Team">{project.team}</Meta>}
         <Meta label="Tools">{project.tools.join(', ')}</Meta>

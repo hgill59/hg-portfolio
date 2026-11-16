@@ -7,7 +7,6 @@ export const projects = [
     title: 'Rentals by New Era',
     tagline:
       'A full redesign for a rental company with homes in Edmonton, Spruce Grove and Leduc.',
-    type: 'Client work',
     role: 'Web developer and designer. I also handled SEO, content and client communication.',
     tools: ['WordPress', 'Elementor', 'Custom Post Types', 'Bluehost', 'FTP/SFTP'],
     liveUrl: 'https://rentalsbynewera.ca',
@@ -55,7 +54,6 @@ export const projects = [
     title: 'Homes by New Era',
     tagline:
       'Reusable page templates, a blog series and an SEO plan for a homebuilder.',
-    type: 'Client work',
     role: 'Web developer. I also handle SEO and AEO strategy, content and client communication.',
     tools: ['WordPress', 'HTML and CSS', 'Structured data', 'FAQ schema', 'Bluehost'],
     liveUrl: 'https://homesbynewera.ca',
@@ -106,7 +104,6 @@ export const projects = [
     slug: 'ahas-website',
     title: 'Alberta Helping Animals Society',
     tagline: 'A website redesign for an Edmonton non-profit, built as a three-person team.',
-    type: 'Team project',
     role: 'Developer on a three-person team.',
     team: 'Curtis, Pavan and me, working as HPC Developments',
     tools: ['Figma', 'Astro', 'Cockpit CMS'],
@@ -140,39 +137,6 @@ export const projects = [
     result: 'The new site is live at ahas.ca.',
     learned:
       'A static front end paired with a headless CMS keeps the code simple for developers and the editing simple for the people who run the site.',
-  },
-  {
-    slug: 'private-messaging-system',
-    title: 'Private messaging system',
-    tagline: 'A user-to-user messaging app built with CodeIgniter for a course.',
-    type: 'Course project',
-    role: 'Developer. I designed the database and built the application.',
-    tools: ['CodeIgniter', 'PHP', 'Ion Auth', 'SQL'],
-    image: '/images/projects/messaging-main.jpg',
-    imageAlt: 'The inbox screen of the private messaging system',
-    brief:
-      'For a course assignment, I built a private messaging system where registered users can send messages to each other.',
-    process: [
-      {
-        title: 'Database schema',
-        text: 'I designed the SQL schema first: the users, and the messages that connect them.',
-        shot: {
-          src: '/images/projects/messaging-schema.jpg',
-          alt: 'Database diagram for the private messaging system',
-        },
-      },
-      {
-        title: 'Accounts',
-        text: 'Ion Auth handles sign-up, login and user accounts.',
-      },
-      {
-        title: 'MVC structure',
-        text: 'The app follows CodeIgniter’s MVC pattern: models for data access, controllers for logic and views for pages.',
-      },
-    ],
-    result: 'A messaging app where signed-in users can message each other privately.',
-    learned:
-      'Planning the schema before the controllers made the MVC code easier to organize.',
   },
 ]
 

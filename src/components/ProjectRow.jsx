@@ -11,7 +11,6 @@ export default function ProjectRow({ project, showRole = false }) {
       </Link>
 
       <div>
-        <p className="text-sm text-slate">{project.type}</p>
         <h3 className="mt-1 text-3xl font-bold sm:text-4xl">
           <Link to={to} className="hover:underline decoration-ember decoration-2 underline-offset-4">
             {project.title}
