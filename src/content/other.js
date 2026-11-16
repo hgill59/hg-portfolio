@@ -10,7 +10,8 @@ export const otherItems = [
   {
     title: 'Git and GitHub for beginners',
     text: 'A tutorial site I built for a course. It walks a complete beginner through Git and GitHub step by step.',
-    image: '/images/other/git-tutorial.jpg',
+    liveUrl: 'https://harmanlab8.blogspot.com/',
+    image: '/images/other/git-tutorial.webp',
     imageAlt: 'The Git and GitHub beginner tutorial site',
   }
 ]

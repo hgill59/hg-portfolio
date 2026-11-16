@@ -1,6 +1,7 @@
 import { otherItems } from '../content/other'
 import Img from '../components/Img'
 import usePageTitle from '../usePageTitle'
+import { Link } from 'react-router-dom'
 
 export default function Other() {
   usePageTitle('Other | Harman Gill')
@@ -23,6 +24,15 @@ export default function Other() {
             />
             <h2 className="mt-5 text-2xl font-bold">{item.title}</h2>
             <p className="mt-2 max-w-[32rem]">{item.text}</p>
+             <a
+              href={item.liveUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="text-link text-ink"
+            >
+              {item.liveUrl}
+              <span className="sr-only"> (opens in a new tab)</span>
+            </a>
           </article>
         ))}
       </div>
