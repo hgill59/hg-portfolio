@@ -65,15 +65,15 @@ export default function ProjectDetail() {
             className="aspect-[16/10] w-full bg-ink object-cover"
           />
         ) : (
-          <Img src={project.image} alt={project.imageAlt} ratio="aspect-[16/9]" />
+          <Img src={project.image} alt={project.imageAlt} />
         )}
       </div>
 
       <div className="mt-14 grid gap-12 lg:grid-cols-[14rem_1fr]">
-        <h2 className="text-3xl font-bold">The brief</h2>
+        <h2 className="text-3xl font-bold">About</h2>
         <p className="max-w-[40rem]">{project.brief}</p>
 
-        <h2 className="text-3xl font-bold">My process</h2>
+        <h2 className="text-3xl font-bold">My Process</h2>
         <div className="space-y-12">
           {project.process.map((step) => (
             <section key={step.title} className="max-w-3xl">
@@ -86,10 +86,10 @@ export default function ProjectDetail() {
           ))}
         </div>
 
-        <h2 className="text-3xl font-bold">The result</h2>
+        <h2 className="text-3xl font-bold">The Result</h2>
         <p className="max-w-[40rem]">{project.result}</p>
 
-        <h2 className="text-3xl font-bold">What I learned</h2>
+        <h2 className="text-3xl font-bold">What I Learned</h2>
         <p className="max-w-[40rem]">{project.learned}</p>
       </div>
 

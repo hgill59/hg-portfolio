@@ -9,8 +9,7 @@ export default function Other() {
     <div className="mx-auto max-w-6xl px-5 pb-20 pt-12 sm:px-8 sm:pt-16">
       <h1 className="text-5xl font-bold sm:text-6xl">Other</h1>
       <p className="mt-4 max-w-[34rem] text-slate">
-        A few things from outside client work: my own branding, coursework I enjoyed and what I
-        do away from the screen.
+        A few things from outside client work
       </p>
 
       <div className="mt-12 grid gap-x-10 gap-y-14 sm:grid-cols-2">

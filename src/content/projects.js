@@ -10,37 +10,30 @@ export const projects = [
     role: 'Web developer and designer. I also handled SEO, content and client communication.',
     tools: ['WordPress', 'Elementor', 'Custom Post Types', 'Bluehost', 'FTP/SFTP'],
     liveUrl: 'https://rentalsbynewera.ca',
-    image: '/images/projects/rentals-main.jpg',
+    image: '/images/projects/rentals-main.webp',
+    clip: '/images/projects/rentals-site.mp4',
     imageAlt: 'Homepage of the Rentals by New Era website after the redesign',
     brief:
       'Rentals by New Era rents residential properties in Edmonton, Spruce Grove and Leduc. Another developer had managed the company’s site. I took it over and redesigned the pages renters use most: the homepage, Listings, Why New Era, Contact and the footer.',
     process: [
       {
         title: 'Taking over the site',
-        text: 'The previous developer handed over WordPress admin, FTP/SFTP, the database, DNS and plugin licenses. Before changing anything, I learned how the site was set up: local and live environments, caching, user roles and Custom Post Types.',
-      },
-      {
-        title: 'Building the design system',
-        text: 'The redesign came with reusable patterns: hero sections, a sticky navigation bar and gold call-to-action strips, plus build notes for Elementor. Every later page started from these.',
-        shot: {
-          src: '/images/projects/rentals-design-system.jpg',
-          alt: 'The hero, sticky navigation and gold call-to-action strip used across Rentals by New Era',
-        },
+        text: 'The previous developer handed over WordPress admin, FTP/SFTP, the database, DNS and plugin licenses. Before changing anything, I learned how the site was set up: local and live environments, caching, user roles and Custom Post Types. The biggest thing was learning the main plugin Elementor, as it was the main area of build. It is a drag and drop website builder so going from looking at a bunch little words and letters on a screen for some years to this was a bit of a challenge'
       },
       {
         title: 'Listing cards',
         text: 'I rebuilt the neighbourhood and property cards in Elementor with price badges, pill-shaped buttons, icon-based amenities and hover states, so renters can compare homes at a glance.',
         shot: {
-          src: '/images/projects/rentals-listing-cards.jpg',
+          src: '/images/projects/rentals-listing-cards.webp',
           alt: 'Redesigned property listing cards with price badges and amenity icons',
         },
       },
       {
-        title: 'Contact page',
-        text: 'The new contact page has a two-column hero, an FAQ accordion and quick-link tiles for the most common requests.',
+        title: 'Why New Era page',
+        text: 'The Why New Era page previously ',
         shot: {
-          src: '/images/projects/rentals-contact.jpg',
-          alt: 'Redesigned contact page with two-column hero and FAQ accordion',
+          src: '/images/projects/rentals-contact.webp',
+          alt: 'Redesigned Why New Era page',
         },
       },
     ],
@@ -57,7 +50,7 @@ export const projects = [
     role: 'Web developer. I also handle SEO and AEO strategy, content and client communication.',
     tools: ['WordPress', 'HTML and CSS', 'Structured data', 'FAQ schema', 'Bluehost'],
     liveUrl: 'https://homesbynewera.ca',
-    image: '/images/projects/homes-main.jpg',
+    image: '/images/projects/homes-main.webp',
     imageAlt: 'Homepage of the Homes by New Era website',
     brief:
       'Homes by New Era is a homebuilder working in Edmonton, Spruce Grove and Leduc. I took over development from another developer and now handle the site’s pages, templates, content and search visibility.',
@@ -70,7 +63,7 @@ export const projects = [
         title: 'Reusable templates',
         text: 'I am building unified page templates around the New Era brand: charcoal, gold and cream, Fraunces and Work Sans type, and blueprint-grid motifs. New pages start from a template instead of from scratch.',
         shot: {
-          src: '/images/projects/homes-templates.jpg',
+          src: '/images/projects/homes-templates.webp',
           alt: 'A New Era page template with charcoal, gold and cream colours and a blueprint grid motif',
         },
       },
@@ -78,7 +71,7 @@ export const projects = [
         title: 'Pages the client asked for',
         text: 'A client email led to a multi-select filter for the Quick Possessions page, animation fixes and a larger Interiors page. I also redesigned and improved Quick Possessions and the Buyer’s Blueprint blog series.',
         shot: {
-          src: '/images/projects/homes-quick-possessions.jpg',
+          src: '/images/projects/homes-quick-possessions.webp',
           alt: 'The Quick Possessions page with its multi-select filter',
         },
       },
@@ -90,7 +83,7 @@ export const projects = [
         title: 'A blog schedule',
         text: 'I set up a biweekly community post for the website and Google Business Profile, covering Spruce Grove, Copperhaven, Harvest Ridge, Jesperdale, Mattson, Rosenthal and Woodbend.',
         shot: {
-          src: '/images/projects/homes-blog.jpg',
+          src: '/images/projects/homes-blog.webp',
           alt: 'A Buyer’s Blueprint blog post on the Homes by New Era website',
         },
       },
@@ -108,7 +101,7 @@ export const projects = [
     team: 'Curtis, Pavan and me, working as HPC Developments',
     tools: ['Figma', 'Astro', 'Cockpit CMS'],
     liveUrl: 'https://ahas.ca',
-    image: '/images/projects/ahas-main.jpg',
+    image: '/images/projects/ahas-main.webp',
     imageAlt: 'Homepage of the Alberta Helping Animals Society website',
     brief:
       'Alberta Helping Animals Society (AHAS) is a non-profit in Edmonton. Three of us rebuilt its website as a team project, working under the name HPC Developments.',
@@ -117,7 +110,7 @@ export const projects = [
         title: 'Design in Figma',
         text: 'We started with design and wireframes in Figma so the team agreed on the structure before writing code.',
         shot: {
-          src: '/images/projects/ahas-figma.jpg',
+          src: '/images/projects/ahas-figma.webp',
           alt: 'Figma wireframes for the AHAS website',
         },
       },
@@ -129,7 +122,7 @@ export const projects = [
         title: 'Content in Cockpit',
         text: 'Content lives in Cockpit, a small PHP-based headless CMS, so staff can update the site without touching code.',
         shot: {
-          src: '/images/projects/ahas-cms.jpg',
+          src: '/images/projects/ahas-cms.webp',
           alt: 'The Cockpit CMS editing screen for the AHAS website',
         },
       },

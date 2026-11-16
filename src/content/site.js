@@ -3,10 +3,9 @@ export const site = {
   name: 'Harman Gill',
   firstName: 'Harman',
   lastName: 'Gill',
-  role: 'Web developer',
+  role: 'Full-Stack Web developer',
   business: 'HG Web Developments',
-  email: 'gillharmanjot55@gmail.com',
-  portrait: '/images/harman.jpg',
+  email: 'hgwebdevelopments@gmail.com',
   nav: [
     { to: '/projects', label: 'Projects' },
     { to: '/about', label: 'About' },

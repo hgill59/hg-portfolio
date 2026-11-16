@@ -19,10 +19,10 @@ export default function Home() {
               <span className="block">{site.lastName}</span>
             </h1>
             <p className="mt-7 font-display text-2xl font-medium sm:text-3xl">
-              {site.role} and founder of {site.business}
+              Aspiring {site.role}
             </p>
             <p className="mt-4 max-w-[34rem] text-slate">
-              I build, fix and grow websites for homebuilders, rental companies and non-profits.
+              I build, fix and grow websites.
             </p>
             <div className="mt-9 flex flex-wrap gap-4">
               <Link to="/projects" className="btn btn-primary">
