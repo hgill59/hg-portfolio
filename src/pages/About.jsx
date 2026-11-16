@@ -20,21 +20,24 @@ export default function About() {
 
         <div className="max-w-[40rem]">
           <h1 className="text-4xl font-bold sm:text-5xl">
-                    Hi, I'm Harman
-                  </h1>
-          
-                  <div className="mt-8 space-y-5">
-                    <p>
-                      I’m a web developer who created {site.business} with the set goal of hopefully one day building it up to becoming a digital marketing agency!</p>
-                      
-                      <p>What I work with the most at the moment is Wordpress when it comes to my client work. My clients so far have been a pretty prominent home builder in the Edmonton area.
-                    </p>
-                    <p>
-                      Other than Wordpress, I have also worked with more modern frameworks like React/NextJs, Tailwind CSS, and Typescript. For my non-profit client, me and my team built the site using Astro a server-first JavaScript web framework designed for building fast, content-driven websites with mostly static content that allowed React and Tailwind components. What I enjoy most is taking a site that’s hard to use or hard to find and making it clear: better design, tidier code, and content that both people and search engines can follow. 
-                    </p>
-                
-                    <p>Away from the screen, you’ll usually find me in the gym as it's my primary escape when the screens get to overwhelming. Lifing weigthts and just getting a sweat in is something I will never take for granted. Without it, I don't think my strive to be better and work my hardest wouldn't be as strong. The resilience and accountablity that comes with weightlifting helps me in everyday life especially with my work. Motivation is everything when there is so much saturation.</p>
-                    <a
+            Hi, I'm Harman
+          </h1>
+
+          <div className="mt-8 space-y-5">
+            <p>
+              I’m a web developer who created {site.business} with the set goal of hopefully one day building it up to becoming a digital marketing agency! My journey in development started when I first learned about DMIT. I had little to no experience but I knew it all felt intriguing to me, so when I started the process was very enjoyable. To this day learning new langagues and frameworks are the most rewarded part of what I do.</p>
+
+            <p>What I work with the most at the moment is Wordpress when it comes to my client work. My clients so far have been a pretty prominent home builder in the Edmonton area.
+            </p>
+            <p>
+              Other than Wordpress, I have also worked with more modern frameworks like React/NextJs, Tailwind CSS, and Typescript. What I enjoy most is taking a site that’s hard to use or hard to find and making it clear: better design, tidier code, and content that both people and search engines can follow.
+            </p>
+
+            <p>Away from the screen, you’ll usually find me in the gym as it's my primary escape when the screens get to overwhelming. Without it, I don't think my strive to be better and work my hardest wouldn't be as strong. The resilience and accountablity that comes with weightlifting helps me in everyday life especially with my work. Motivation is everything when there is so much saturation.</p>
+          <h3 className="text-lg font-bold pt-4 sm:text-xl">
+            My Github Repo
+          </h3>
+            <a
               href='https://github.com/hgill59'
               target="_blank"
               rel="noreferrer"
@@ -43,8 +46,8 @@ export default function About() {
               https://github.com/hgill59
               <span className="sr-only"> (opens in a new tab)</span>
             </a>
-                  </div>
-          
+          </div>
+
 
           <div className="mt-12 flex flex-wrap gap-4">
             <Link to="/projects" className="btn btn-primary">
