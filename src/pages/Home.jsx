@@ -50,7 +50,7 @@ export default function Home() {
           </Link>
         </div>
         {featured.map((project) => (
-          <ProjectRow key={project.slug} project={project} />
+          <ProjectRow key={project.slug} project={project} showRole />
         ))}
       </section>
 
