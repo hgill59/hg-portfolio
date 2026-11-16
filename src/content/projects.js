@@ -128,12 +128,12 @@ export const projects = [
       },
       {
         title: 'Front end in Astro',
-        text: 'The front end is built with Astro, a static site framework, which keeps the pages fast.',
+        text: 'The front end is built with Astro, a static site framework, which keeps the pages fast. Astro prefetches all the content that retrieved from fetch calls at build time, it’s the main idea of the framework.  Content we needed to be dynamic and update in real time needed to be put in a component that ships to the client. It also allowed integration with react components as well. All dynamic content is put in a react component and sent to the browser to load the data. It just added a layer of complexity, but also a clear separation between what needed to be dynamic and what needed to be static.',
       },
     ],
-    result: 'The new site is live at ahas.ca.',
+    result: 'The new site is live at ahas.ca. We were able to be one of the first sites to be live in our Capstone class. Our client was very happy with the outcome and found the Cockpit CMS easy to use.',
     learned:
-      'A static front end paired with a headless CMS keeps the code simple for developers and the editing simple for the people who run the site.',
+      'This project was a major building block in expanding my mind to trying different things and how to properly build a site. My problem solving and planning skills were heavily challenged in the best way possible and grew those skills. The biggest thing I would say I learned is how to communicate with a client efficiently and professionally to meet there needs as soon as you can, without sacrificing quality.',
   },
 ]
 

@@ -33,7 +33,7 @@ export default function About() {
                       Other than Wordpress, I have also worked with more modern frameworks like React/NextJs, Tailwind CSS, and Typescript. For my non-profit client, me and my team built the site using Astro a server-first JavaScript web framework designed for building fast, content-driven websites with mostly static content that allowed React and Tailwind components. What I enjoy most is taking a site that’s hard to use or hard to find and making it clear: better design, tidier code, and content that both people and search engines can follow. 
                     </p>
                 
-                    <p>Away from the screen, you’ll usually find me in the gym as it's my primary escape when the screens get to overwhelming. Lifing weigthts and just getting a sweat in is something I will never take for granted. Without it, I don't think strive to be better and work harder wouldn't be as strong</p>
+                    <p>Away from the screen, you’ll usually find me in the gym as it's my primary escape when the screens get to overwhelming. Lifing weigthts and just getting a sweat in is something I will never take for granted. Without it, I don't think my strive to be better and work my hardest wouldn't be as strong. The resilience and accountablity that comes with weightlifting helps me in everyday life especially with my work. Motivation is everything when there is so much saturation.</p>
                   </div>
           
 
@@ -51,7 +51,7 @@ export default function About() {
       <section aria-labelledby="skills-heading" className="pb-20">
         <div className="mx-auto mb-8 max-w-6xl px-5 sm:px-8">
           <h2 id="skills-heading" className="text-3xl font-bold sm:text-4xl">
-            Skills
+            My Skills
           </h2>
         </div>
         <SkillsCarousel />
